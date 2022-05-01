@@ -1,5 +1,5 @@
 {
-  "name": "protifolio",
+  "name": "portifolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,12 +8,16 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint:styles": "npx stylelint '**/*.css'",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -34,5 +38,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-trybe-frontend": "^1.2.2",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-sonarjs": "^0.9.1",
+    "prop-types": "^15.7.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "4.1.0"
   }
 }
