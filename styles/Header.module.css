@@ -64,7 +64,6 @@
   }
 
   .toggle-container {
-    /* border: solid 1px; */
     position: absolute;
     height: calc(100vh - 6em);
     width: 100vw;
@@ -76,7 +75,6 @@
   }
 
   .toggle-container-closed {
-    /* border: solid 1px; */
     position: absolute;
     height: calc(100vh - 6em);
     width: 100vw;
@@ -89,8 +87,6 @@
   .blur {
     width: 50%;
     height: 100%;
-    /* background: var(--indigo);
-    opacity: 50%; */
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
   }
@@ -104,5 +100,28 @@
     justify-content: center;
     background-color: var(--indigo);
     box-shadow: -5px 11px 10px var(--indigo);
+  }
+
+  .mobile ul li {
+    margin-bottom: 1em;
+  }
+
+  .mobile button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-destak);
+    font-size: 2em;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 596px) {
+  .blur {
+    width: 30%;
+  }
+
+  .toggle-container ul,
+  .toggle-container-closed ul {
+    width: 70%;
   }
 }
