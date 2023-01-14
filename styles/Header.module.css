@@ -3,10 +3,11 @@
   position: fixed;
   width: 100vw;
   max-width: 1920px;
-  padding: 1em 3em;
+  padding: 1em 2em;
   display: flex;
   align-items: center;
   backdrop-filter: blur(25px);
+  top: 0;
 }
 .wrapper {
   display: flex;
@@ -87,7 +88,7 @@
   .blur {
     width: 50%;
     height: 100%;
-    -webkit-backdrop-filter: blur(25px);
+    /* -webkit-backdrop-filter: blur(25px); */
     backdrop-filter: blur(25px);
   }
 
