@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
-import {GrClose} from 'react-icons/gr';
 
 import styles from '../styles/Header.module.css';
 
