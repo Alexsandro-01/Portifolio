@@ -36,7 +36,8 @@
 
 .dark {
   --color-background: var(--indigo);
-  --color-hover: var(--white-mute);
+  --color-hover: var(--text-dark-2);
+  --color-text: var(--white-mute);
   background-color: var(--color-background);
 }
 
