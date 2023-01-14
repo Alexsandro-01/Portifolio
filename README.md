@@ -1,3 +1,3 @@
 # Boas vindas ao repositório do meu Portifólio
 
-> **Note**: Ainda estou contruindo, quando finalizar atualizo as informações sobre o repositório. 
+> **Note**: Ainda estou construindo, quando finalizar atualizo as informações sobre o repositório. 
