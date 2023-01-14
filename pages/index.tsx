@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
+import Social from '../components/Social'
+import Hello from '../components/Hello'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +19,8 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-
+        <Social />
+        <Hello />
       </main>
     </>
   )
