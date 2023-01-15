@@ -61,11 +61,13 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  font-family: Fira code;
 }
 
-body {
-  font-family: Fira code;
+html {
+  scroll-behavior: smooth;
+  scroll-margin: 0;
+  scroll-padding-top: 6em;
 }
 
 a {
@@ -79,3 +81,23 @@ a:hover {
   border-bottom: 1px solid;
 }
 
+/* Works on Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-dark-2) var(--indigo);
+}
+
+/* Works on Chrome, Edge, and Safari */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--indigo);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--text-dark-2);
+  border-radius: 20px;
+  border: 3px solid var(--indigo);
+}

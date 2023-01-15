@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Social from '../components/Social'
 import Hello from '../components/Hello'
+import AbouteMe from '../components/AbouteMe'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function Home() {
       <main className={styles.main}>
         <Social />
         <Hello />
+        <AbouteMe />
       </main>
     </>
   )

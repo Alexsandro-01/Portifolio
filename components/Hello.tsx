@@ -4,7 +4,7 @@ import styles from '../styles/Hello.module.css';
 
 function Hello() {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id="home">
       <article>
         <p className={styles.destak}>Boas vindas! Eu sou o</p>
         <h1>Alexsandro Pinheiro</h1>

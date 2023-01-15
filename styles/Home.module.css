@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: calc(100vh - 6em);
-  padding: 0 6em;
+  padding: 0 7em;
 }
 
 .nav {
@@ -68,12 +68,12 @@
   flex-grow: 1;
 }
 
-@media (max-width: 596px) {
-  .main .nav {
-    left: -5em;
+@media (max-width:  720px) {
+  .main {
+    padding: 0 2em;
   }
 
-  .main {
-    padding: 0;
+  .main .nav {
+    left: -5em;
   }
 }

@@ -7,7 +7,17 @@ function Header() {
   const [toggle, setToggle] = useState('toggle-container-closed');
 
   function toggleMenu() {
-    const changeToggle = toggle === 'toggle-container' ? 'toggle-container-closed' : 'toggle-container';
+    const html = document.querySelector('html') as HTMLElement;
+    let changeToggle = '';
+
+    if (toggle === 'toggle-container') {
+      changeToggle = 'toggle-container-closed';
+      html.style.overflow = 'auto';
+
+    } else {
+      changeToggle = 'toggle-container'
+      html.style.overflow = 'hidden';
+    }
 
     setToggle(changeToggle);
   }
