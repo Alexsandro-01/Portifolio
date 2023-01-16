@@ -9,7 +9,7 @@
 .home .destak {
   padding-left: 1rem;
   padding-bottom: 1rem;
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--color-destak);
 }
 
@@ -45,7 +45,7 @@
   }
 
   .home h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .home article {
