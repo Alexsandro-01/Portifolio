@@ -4,7 +4,7 @@ import Image from 'next/image'
 import ProfilePicture from '../public/Alex.jpg';
 import styles from '../styles/AbouteMe.module.css';
 
-function AbouteMe() {
+function AboutMe() {
   return (
     <section className={styles["about-me"]} id="about-me">
       <div className={styles.container}>
@@ -50,7 +50,6 @@ function AbouteMe() {
         <div className={styles.picture}>
           <div className={styles["img-container"]}>
             <Image src={ProfilePicture} alt="Foto do Alexsandro" className={styles.img} />
-            <div className={styles["border-img"]}></div>
           </div>
         </div>
       </div>
@@ -58,4 +57,4 @@ function AbouteMe() {
   )
 }
 
-export default AbouteMe
+export default AboutMe;
