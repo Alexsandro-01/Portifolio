@@ -20,8 +20,6 @@
 }
 
 .img-container {
-  position: relative;
-  z-index: 1;
   margin-top: 65px;
 }
 
@@ -34,21 +32,17 @@
   width: 100%;
   height: auto;
   border-radius: 0.25em;
+  transition: .3s ease-in;
   cursor: pointer;
+  box-shadow: blue 0px 0px 0px 2px inset,
+            var(--indigo) 25px 25px 0px -3px,
+            var(--color-destak) 25px 25px;
 }
 
-.picture .border-img {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 95%;
-  height: 92%;
-  padding: 0;
-  max-height: 340px;
-  border: 2px solid var(--color-destak);
-  border-radius: 0.25em;
-  z-index: -1;
-  transition: 0.3s ease-in;
+.picture .img:hover {
+  box-shadow: blue 0px 0px 0px 2px inset,
+            var(--indigo) 15px 15px 0px -3px,
+            var(--color-destak) 15px 15px;
 }
 
 .description article h1 {
