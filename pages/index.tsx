@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import Social from '../components/Social'
 import Hello from '../components/Hello'
 import AboutMe from '../components/AboutMe'
+import Projects from '../components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,13 +17,14 @@ export default function Home() {
         <title>Alexsandro</title>
         <meta name="description" content="Portifólio do Alexsandro Pinheiro" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Alex-logo.ico" />
       </Head>
       <Header />
       <main className={styles.main}>
         <Social />
         <Hello />
         <AboutMe />
+        <Projects />
       </main>
     </>
   )
