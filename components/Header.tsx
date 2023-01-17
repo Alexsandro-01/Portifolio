@@ -35,7 +35,10 @@ function Header() {
                 <a href="#home">Início</a>
               </li>
               <li>
-                <a href="#about-me">About</a>
+                <a href="#about-me">Sobre</a>
+              </li>
+              <li>
+                <a href="#projects">Projetos</a>
               </li>
             </ul>
           </div>
@@ -65,7 +68,13 @@ function Header() {
                 <a
                   href="#about-me"
                   onClick={toggleMenu}
-                >About</a>
+                >Sobre</a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  onClick={toggleMenu}
+                >Projetos</a>
               </li>
             </ul>
           </div>
