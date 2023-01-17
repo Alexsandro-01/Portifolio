@@ -51,8 +51,4 @@
   .home article {
     max-width: 100%;
   }
-
-  .home article p:last-child {
-    font-size: .9em;
-  }
 }

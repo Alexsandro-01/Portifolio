@@ -8,6 +8,7 @@
 
   --text-dark-2: #ebebeba3;
   --text-destak: #ff8400;
+  --text-sub: #f3bf00;
 
   --indigo: #15202b;
   
@@ -67,7 +68,6 @@ body {
 html {
   scroll-behavior: smooth;
   scroll-margin: 0;
-  scroll-padding-top: 6em;
 }
 
 a {
@@ -79,6 +79,10 @@ a {
 a:hover {
   color: var(--white-mute);
   border-bottom: 1px solid;
+}
+
+p {
+  line-height: 1.75em;
 }
 
 /* Works on Firefox */
