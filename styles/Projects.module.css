@@ -1,0 +1,21 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100vh;
+  max-width: 955px;
+  padding: 6em 0;
+}
+
+.projects h1 {
+  color: var(--color-destak);
+  /* width: 100%; */
+  padding-bottom: 2em;
+}
+
+.list-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
