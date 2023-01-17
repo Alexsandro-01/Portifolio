@@ -53,7 +53,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-  </section>
+    </section>
   )
 }
 
