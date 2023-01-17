@@ -1,6 +1,7 @@
 .about-me {
   display: flex;
   min-height: 100vh;
+  padding: 6em 0;
 }
 
 .about-me .container {
@@ -89,15 +90,14 @@
     padding: 0;
   }
 
+  .img-container {
+    margin-top: 0;
+  }
+  
   .picture {
     width: 70%;
     align-self: center;
+    margin-top: 1em;
     margin-top: 3em;
-  }
-}
-
-@media (max-width: 596px) {
-  .about-me {
-    padding: 0;
   }
 }
