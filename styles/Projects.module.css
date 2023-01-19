@@ -10,7 +10,6 @@
 
 .projects h1 {
   color: var(--color-destak);
-  /* width: 100%; */
   padding-bottom: 2em;
 }
 
@@ -18,4 +17,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 955px) {
+  .projects h1 {
+    padding-bottom: 0;
+  }
 }
