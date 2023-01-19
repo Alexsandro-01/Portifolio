@@ -1,0 +1,86 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100vh;
+  max-width: 955px;
+  padding: 6em 0;
+}
+
+.projects h1 {
+  color: var(--color-destak);
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.list-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+/* Others Card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: .25em;
+  color: var(--color-hover);
+  box-shadow: 0px 0px 15px #060a0f;
+  padding: 2em;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folder {
+  font-size: 3em;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links a {
+  margin: 0 .5em;
+  font-size: 1.25em;
+  color: var(--color-hover);
+}
+
+.links a:hover {
+  border: none;
+  color: var(--text-destak);
+}
+
+.description {
+  padding: 1em 0;
+}
+
+.description h3 {
+  color: var(--color-text);
+  padding: 1em 0;
+}
+
+.description p {
+  color: var(--color-hover);
+}
+
+.card ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1em;
+}
+
+.card ul li {
+  margin: 0 .5em;
+  padding: .25em 0;
+  color: var(--text-sub);
+  font-size: small;
+}
