@@ -1,8 +1,10 @@
 .card {
   max-width: 720px;
-  margin: 2em 0;
   border-radius: .25em;
   box-shadow: 0px 0px 15px #060a0f;
+  display: flex;
+  flex-direction: column;
+  transition: .3s ease-in;
 }
 
 .thumb {
@@ -12,6 +14,10 @@
 
 .description {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
 }
 
 .description h3 {
@@ -32,9 +38,8 @@
 
 .description ul li {
   margin: 0 .5em;
-  padding: 1em 0;
+  padding: .5em 0;
   color: var(--text-sub);
-  /* text-decoration: underline; */
   font-size: small;
 }
 
@@ -58,6 +63,5 @@
 @media (max-width: 596px) {
   .card {
     width: 100%;
-
   }
 }
