@@ -40,6 +40,9 @@ function Header() {
               <li>
                 <a href="#projects">Projetos</a>
               </li>
+              <li>
+                <a href="#certificates">Certificados</a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -75,6 +78,12 @@ function Header() {
                   href="#projects"
                   onClick={toggleMenu}
                 >Projetos</a>
+              </li>
+              <li>
+                <a
+                  href="#certificates"
+                  onClick={toggleMenu}
+                >Certificados</a>
               </li>
             </ul>
           </div>
