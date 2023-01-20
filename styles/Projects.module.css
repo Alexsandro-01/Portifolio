@@ -13,13 +13,15 @@
 }
 
 .list-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 955px) {
-  .projects h1 {
-    padding-bottom: 0;
+  .list-projects {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
   }
 }
