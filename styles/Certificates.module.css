@@ -1,0 +1,42 @@
+.certificates {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 955px;
+  padding: 6em 0;
+}
+
+.certificates h1 {
+  color: var(--color-destak);
+  padding-bottom: 2em;
+}
+
+.list-images {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-card {
+  transition: 0.3s ease-in;
+}
+
+.img-card:hover {
+  transform: translateY(-5px);
+}
+
+.img-card img {
+  width: 100%;
+  border-radius: .25em;
+}
+
+.img-card a {
+  border: none;
+}
+
+@media (max-width:  720px) {
+  .list-images {
+    grid-template-columns: 1fr;
+  }
+}
