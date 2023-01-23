@@ -40,7 +40,7 @@ function Footer() {
             <a
               href="mailto:alexsandrofire@hotmail.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <FaEnvelope />
             </a>
@@ -48,7 +48,7 @@ function Footer() {
         </ul>
       </nav>
       <p>
-        Desenvolvido por <span>&copy;Alexsandro</span> inspirado por <a href='https://brittanychiang.com/' target="_blank" rel="noreferrer">Brittany Chiang</a>
+        Desenvolvido por <span>&copy; <a href='https://www.linkedin.com/in/alexsandro-pinheiro-dev/' target="_blank" rel='noreferrer' >Alexsandro</a></span> inspirado por <a href='https://brittanychiang.com/' target="_blank" rel="noreferrer">Brittany Chiang</a>
       </p>
     </footer>
   )
