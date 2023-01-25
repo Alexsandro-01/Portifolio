@@ -28,13 +28,13 @@
   justify-content: space-between;
   border-radius: .25em;
   color: var(--color-hover);
-  box-shadow: 0px 0px 5px #060a0f;
+  box-shadow: 0px 0px 5px var(--color-border);
   padding: 2em;
   transition: .3s ease-in;
 }
 
 .card:hover {
-  box-shadow: 0px 10px 20px #060a0f;
+  box-shadow: 0px 10px 20px var(--color-border);
 }
 
 .icons {
