@@ -33,9 +33,7 @@ function Projects() {
       }
     });
 
-    setRepos(filteredRepos);
-    console.log(filteredRepos);
-    
+    setRepos(filteredRepos);    
   }
 
 useEffect(() => {
