@@ -15,6 +15,10 @@ function Certificates() {
     {
       img: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/60747524',
       url: 'https://www.credential.net/e65336e4-a1d6-4bb4-ac19-5812ba7a2205#gs.nnkn8y'
+    },
+    {
+      img: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/66831590',
+      url: 'https://www.credential.net/97400391-3c3a-438f-b9be-2f3b6ef56098#gs.nkf2eh'
     }
   ];
 
