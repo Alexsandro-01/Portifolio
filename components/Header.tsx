@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 
 import styles from '../styles/Header.module.css';
 
 function Header() {
   const [toggle, setToggle] = useState('toggle-container-closed');
+  const [theme, setTheme] = useState('dark');
 
   function toggleMenu() {
     const html = document.querySelector('html') as HTMLElement;
@@ -22,6 +23,30 @@ function Header() {
     setToggle(changeToggle);
   }
 
+  function toggleTheme(localTheme: string | undefined) {
+    const body = document.querySelector('body') as HTMLElement;
+    
+    if (localTheme) {
+      body.className = localTheme;  
+    }
+    
+    if (!localTheme) {
+      body.className = theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', body.className)
+    }
+
+    setTheme(body.className)
+  }
+
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme');
+
+    if (localTheme) {
+      toggleTheme(localTheme);
+    }
+  }, [])
+
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
@@ -31,6 +56,16 @@ function Header() {
         <nav className={styles.wide}>
           <div>
             <ul>
+              <li>
+                <label className={styles.switch}>
+                  <input type="checkbox" checked={theme === 'dark'} onChange={() => toggleTheme(undefined)} />
+                    <span className={styles.slider}>
+                      {
+                        theme === 'dark' ? (<FaMoon />) : (<FaSun />)
+                      }
+                    </span>
+                </label>
+              </li>
               <li>
                 <a href="#home">Início</a>
               </li>
@@ -61,6 +96,16 @@ function Header() {
           <div className={styles[toggle]}>
             <div className={styles.blur} onClick={toggleMenu}></div>
             <ul>
+              <li>
+                <label className={styles.switch}>
+                  <input type="checkbox" checked={theme === 'dark'} onChange={() => toggleTheme(undefined)} />
+                    <span className={styles.slider}>
+                      {
+                        theme === 'dark' ? (<FaMoon />) : (<FaSun />)
+                      }
+                    </span>
+                </label>
+              </li>
               <li>
                 <a
                   href="#home"
