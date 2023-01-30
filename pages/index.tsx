@@ -41,7 +41,7 @@ export async function getStaticProps() {
 
   const filteredProjects = repositories.filter((repo) => {
     if (projectsNames.includes(repo.name)) {
-      repo.image = `/projects-images/${repo.name}.png`;
+      repo.image = `/images/projects-images/${repo.name}.png`;
       return repo;
     }
   });
