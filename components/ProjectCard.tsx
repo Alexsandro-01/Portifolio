@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 import { TGithubResponse } from '../types/TGithubResponse'
 import styles from '../styles/Cards.module.css';
@@ -8,9 +9,7 @@ function ProjectCard({ repo }: { repo: TGithubResponse }) {
   return (
     <div className={styles.card}>
       <div>
-        <picture>
-          <img className={styles.thumb} src={repo.image} alt={repo.name} />
-        </picture>
+          <Image className={styles.thumb} src={repo.image} alt={repo.name} width='620' height='250' />
       </div>
       <div className={styles.description}>
         <article>

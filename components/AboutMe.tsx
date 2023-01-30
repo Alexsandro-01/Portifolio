@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import ProfilePicture from '../public/Alex.jpg';
+import ProfilePicture from '../public/images/Alex.jpg';
 import styles from '../styles/AbouteMe.module.css';
 
 function AboutMe() {
