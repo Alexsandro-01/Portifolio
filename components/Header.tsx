@@ -84,6 +84,7 @@ function Header() {
         <nav className={styles.mobile}>
           <button
             onClick={toggleMenu}
+            aria-label="toogle menu"
           >
             {
               toggle === 'toggle-container-closed' ? (
