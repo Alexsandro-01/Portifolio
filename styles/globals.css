@@ -35,7 +35,7 @@
 
 @font-face {
   font-family: Fira code;
-  src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@0,300;1,600&display=swap');
+  src: local('Fira code'), url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Kumbh+Sans:wght@400;700&family=Nunito:ital,wght@0,300;1,600&display=swap');
   font-weight: 500;
   font-display: swap;
 }
