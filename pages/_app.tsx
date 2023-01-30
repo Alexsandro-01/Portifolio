@@ -1,8 +1,8 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
-import { Fira_Code } from '@next/font/google'
-const firaCode = Fira_Code({ subsets: ['latin'] })
+import localFont from '@next/font/local'
+const firaCode = localFont({ src: '../public/assets/FiraCode-Medium.woff' })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
