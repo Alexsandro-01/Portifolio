@@ -7,38 +7,7 @@ import ProjectCard from './ProjectCard';
 import styles from '../styles/Projects.module.css';
 
 
-function Projects() {
-  const [repos, setRepos] = useState<TGithubResponse[]>([]);
-
-  async function getRepos(): Promise<TGithubResponse[]> {
-    const response = await fetch('https://api.github.com/users/Alexsandro-01/repos');
-
-    const repositories = await response.json();
-    
-    return repositories;
-  }
-
-  async function filterRepos() {
-    const filterNames = [
-      "Form-multi-step",
-      "trybetunes",
-      "trybewallet",
-      "Bankin"
-    ]
-
-    const filteredRepos = (await getRepos()).filter((repo) => {
-      if (filterNames.includes(repo.name)) {
-        repo.image = `/projects-images/${repo.name}.png`;
-        return repo;
-      }
-    });
-
-    setRepos(filteredRepos);    
-  }
-
-useEffect(() => {
-  filterRepos()
-}, [])
+function Projects({ repos }: { repos: TGithubResponse[] }) {
 
   return (
     <section className={styles.projects} id='projects'>
