@@ -57,8 +57,17 @@ function Header() {
           <div>
             <ul>
               <li>
-                <label className={styles.switch}>
-                  <input type="checkbox" checked={theme === 'dark'} onChange={() => toggleTheme(undefined)} />
+                <label
+                  className={styles.switch}
+                  htmlFor='changeTheme'
+                  aria-label='toogle theme'
+                >
+                  <input
+                    type="checkbox"
+                    checked={theme === 'dark'}
+                    onChange={() => toggleTheme(undefined)}
+                    id="changeTheme"
+                  />
                     <span className={styles.slider}>
                       {
                         theme === 'dark' ? (<FaMoon />) : (<FaSun />)
@@ -97,9 +106,18 @@ function Header() {
           <div className={styles[toggle]}>
             <div className={styles.blur} onClick={toggleMenu}></div>
             <ul>
-              <li>
-                <label className={styles.switch}>
-                  <input type="checkbox" checked={theme === 'dark'} onChange={() => toggleTheme(undefined)} />
+            <li>
+                <label
+                  className={styles.switch}
+                  htmlFor='changeTheme'
+                  aria-label='toogle theme'
+                >
+                  <input
+                    type="checkbox"
+                    checked={theme === 'dark'}
+                    onChange={() => toggleTheme(undefined)}
+                    id="changeTheme"
+                  />
                     <span className={styles.slider}>
                       {
                         theme === 'dark' ? (<FaMoon />) : (<FaSun />)
