@@ -21,7 +21,7 @@ function AboutMe() {
             </p>
             <p>
               Em 2021 conheci a Trybe e comecei o curso de Desenvolvimento Web
-              Full Stack com 1600 horas de duração ao longo de um ano que, além
+              Full Stack com 1500 horas de duração ao longo de um ano que, além
               de hardskills, ensina sobre as softskills que um profissional
               precisa para ser bem qualificado.
             </p>
